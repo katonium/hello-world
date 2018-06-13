@@ -22,6 +22,10 @@ namespace OrigamiJpegFix
             InitializeComponent();
         }
 
+
+        //[ファイル(&F)]メニュー関連のイベントハンドラ 
+        #region FileMenu handlers
+
         private void setDirty(bool flag)
         {
             dirtyFlag = flag;
@@ -40,7 +44,7 @@ namespace OrigamiJpegFix
         private void menuNew_Click(object sender, EventArgs e)
         {
             const string MSG_BOX_TITLE = "ファイルの新規作成";
-            if(confirmDestructionText(MSG_BOX_TITLE))
+            if (confirmDestructionText(MSG_BOX_TITLE))
             {
                 this.Text = "新規ファイル";
                 textBox1.Clear();
@@ -90,7 +94,7 @@ namespace OrigamiJpegFix
         {
             const string MSGBOX_TITLE = "ファイルの上書き保存";
 
-            if(File.Exists(editFilePath))
+            if (File.Exists(editFilePath))
             {
                 try
                 {
@@ -98,7 +102,7 @@ namespace OrigamiJpegFix
                     setDirty(false);
                     ShowSaveDateTime();
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show(this, ex.Message, MSGBOX_TITLE, MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
@@ -122,7 +126,7 @@ namespace OrigamiJpegFix
             saveFileDlg.ShowDialog(this);
         }
 
-        private string GetFileNameString(string filePath,char separateChar)
+        private string GetFileNameString(string filePath, char separateChar)
         {
             try
             {
@@ -155,7 +159,7 @@ namespace OrigamiJpegFix
             }
             catch (Exception ex)
             {
-                MessageBox.Show(this, ex.Message, MSGBOX_TITLE, 
+                MessageBox.Show(this, ex.Message, MSGBOX_TITLE,
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
@@ -181,4 +185,57 @@ namespace OrigamiJpegFix
                 e.Cancel = true;
             }
         }
+
+        private void menuUndo_Click(object sender, EventArgs e)
+        {
+            if(textBox1.CanUndo)
+            {
+                textBox1.Undo();
+                textBox1.ClearUndo();
+            }
+        }
+
+        private void menuCut_Click(object sender, EventArgs e)
+        {
+            if(textBox1.SelectedText!="")
+            {
+                textBox1.Cut();
+            }
+        }
+
+        private void menuCopy_Click(object sender, EventArgs e)
+        {
+            if (textBox1.SelectedText != "")
+            {
+                textBox1.Copy();
+            }
+        }
+
+        private void menuPaste_Click(object sender, EventArgs e)
+        {
+            if (Clipboard.GetDataObject().GetDataPresent(DataFormats.Text))
+            {
+                textBox1.Paste();
+            }
+
+
+
+
+        }
+
+        private void menuDelete_Click(object sender, EventArgs e)
+        {
+            textBox1.Cut();
+            Clipboard.Clear();
+        }
+
+        private void menuAllSelect_Click(object sender, EventArgs e)
+        {
+            textBox1.SelectAll();
+        }
+        #endregion
+
+
+
+    }
 }

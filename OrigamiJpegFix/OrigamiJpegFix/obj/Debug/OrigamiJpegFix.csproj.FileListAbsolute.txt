@@ -8,3 +8,12 @@ C:\Users\Archimedes\Documents\hello-world\OrigamiJpegFix\OrigamiJpegFix\obj\Debu
 C:\Users\Archimedes\Documents\hello-world\OrigamiJpegFix\OrigamiJpegFix\obj\Debug\OrigamiJpegFix.csproj.CoreCompileInputs.cache
 C:\Users\Archimedes\Documents\hello-world\OrigamiJpegFix\OrigamiJpegFix\obj\Debug\OrigamiJpegFix.exe
 C:\Users\Archimedes\Documents\hello-world\OrigamiJpegFix\OrigamiJpegFix\obj\Debug\OrigamiJpegFix.pdb
+C:\Users\Masaki Kato\Documents\hello-world\OrigamiJpegFix\OrigamiJpegFix\bin\Debug\OrigamiJpegFix.exe.config
+C:\Users\Masaki Kato\Documents\hello-world\OrigamiJpegFix\OrigamiJpegFix\obj\Debug\OrigamiJpegFix.exe
+C:\Users\Masaki Kato\Documents\hello-world\OrigamiJpegFix\OrigamiJpegFix\obj\Debug\OrigamiJpegFix.pdb
+C:\Users\Masaki Kato\Documents\hello-world\OrigamiJpegFix\OrigamiJpegFix\obj\Debug\OrigamiJpegFix.csprojResolveAssemblyReference.cache
+C:\Users\Masaki Kato\Documents\hello-world\OrigamiJpegFix\OrigamiJpegFix\obj\Debug\OrigamiJpegFix.Form1.resources
+C:\Users\Masaki Kato\Documents\hello-world\OrigamiJpegFix\OrigamiJpegFix\obj\Debug\OrigamiJpegFix.Properties.Resources.resources
+C:\Users\Masaki Kato\Documents\hello-world\OrigamiJpegFix\OrigamiJpegFix\obj\Debug\OrigamiJpegFix.csproj.GenerateResource.Cache
+C:\Users\Masaki Kato\Documents\hello-world\OrigamiJpegFix\OrigamiJpegFix\bin\Debug\OrigamiJpegFix.exe
+C:\Users\Masaki Kato\Documents\hello-world\OrigamiJpegFix\OrigamiJpegFix\bin\Debug\OrigamiJpegFix.pdb
